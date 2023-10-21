@@ -201,9 +201,13 @@ section {
 }
 
 .about-img img {
-    float: left;
+    /* float: left;
     margin-left: 5%;
-    height: 500px;
+    height: 500px; */
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 
 }
 
@@ -546,86 +550,6 @@ form textarea {
     background: var(--main-color);
 }
 
-/* @media (max-width: 1480px) {
-    header {
-        padding: 12px 2.5%;
-        transition: .1s;
-    }
-
-    section {
-        padding: 110px 3% 60px;
-    }
-
-    .end {
-        padding: 15px 3%;
-    }
-}
-@media (max-width: 1100px){
-    :root{
-        --big-font:4rem;
-        --h2-font:2.5rem;
-        --p-font:1rem;
-        transition: .1s;
-    }
-    .home-text h3{
-        font-size: 2.5rem;
-    }
-    .home{
-        height: 87vh;
-    }
-}
-@media (max-width:920){
-    .about{
-        grid-template-columns: 1fr;
-
-    }
-    .about-text{
-        padding-left: 1%;
-    }
-    .about-img img{
-        width: 90%;
-        height: auto;
-        max-width: 100%;
-    }
-    .contact{
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 480px){
-    #menu-icon{
-        display: block;
-    }
-    .navlist{
-        position: absolute;
-        top: -1000px;
-        right: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        text-align: left;
-        transition: all .45s ease;
-
-    }
-    .navlist a{
-        display: block;
-        margin: 17px;
-        font-size: 20px;
-        transition: all .45s ease;
-        color: var(--text-color);
-
-    }
-    .navlist a:hover{
-        color: var(--main-color);
-    }
-    navlist a.active{
-        color: var(--text-color);
-    }
-    .navlist.open{
-        top: 100%;
-    }
-} */
-
 
 @media (max-width: 1100px) {
     :root {
@@ -641,6 +565,17 @@ form textarea {
 
     .home {
         height: 87vh;
+    } 
+    .portfolio-content{
+        padding: 0px;
+    }   
+    .row {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .row img {
+        display: inline-block;
     }
 }
 
@@ -648,7 +583,9 @@ form textarea {
     .about {
         grid-template-columns: 1fr;
     }
-
+    .section__pic-container {
+        display: flex;
+    }
     .about-text {
         padding-left: 1%;
     }
@@ -661,6 +598,12 @@ form textarea {
 
     .contact {
         grid-template-columns: 1fr;
+    }
+
+    .header header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -695,5 +638,9 @@ form textarea {
 
     .navlist.open {
         top: 100%;
+    }
+
+    .section__pic-container {
+        display: none;
     }
 }
