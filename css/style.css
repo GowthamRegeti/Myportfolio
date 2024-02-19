@@ -133,8 +133,11 @@ section {
 .section__pic-container {
     display: flex;
     height: 400px;
-    width: 400px;
-    margin: auto 0;
+    margin: auto 0;   
+}
+
+.section__pic-container img{
+    border-radius: 50%;
 }
 
 .home-text h1 {
@@ -218,9 +221,11 @@ section {
 
 .about-img img {
     float: left;
+    margin-top: -5%;
     margin-left: 5%;
-    height: 500px;
-
+    padding-right: 10%;
+    height: 425px;
+    border-radius: 50%;
 }
 
 .about-text h2 {
